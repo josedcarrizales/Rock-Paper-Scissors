@@ -10,7 +10,7 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         ZStack {
-            Color.brown.ignoresSafeArea(edges: .all)
+            Color.accent.ignoresSafeArea(edges: .all)
             VStack {
                 Image("RPS Logo")
                     .resizable()
@@ -26,8 +26,8 @@ struct Home: View {
                     Button(action: {} ) {
                         ZStack {
                             Rectangle()
-                                .fill(Color.pink)
-                                .frame(width: 200, height: 100)
+                                .fill(Color.set2)
+                                .frame(width: 300, height: 100)
                                 .cornerRadius(20)
                             Text("Play")
                                 .font(.system(size: 30, weight: .bold))
